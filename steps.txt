@@ -1,0 +1,15 @@
+git config --global user.name eduardo.viegas
+git config --global user.email eduardo.viegas@etec.sp.gov.br
+
+dotnet new mvc -o OdraFlix
+
+dotnet new sln --name OdraFlix
+
+dotnet sln add OdraFlix\OdraFlix.csproj
+
+Instalar pacotes no projeto:
+    1 - Usar o side nuget.org e o dotnet CLI
+        dotnet add packarges microsoft.EntityFrameworkCore --version 8.0.4
+        
+    2 - Usar extensões do CODE como nuget Gallery
+    Shit + Control + P
