@@ -11,6 +11,8 @@ public class Genre
     public byte id { get; set; }
 
     [Display(Name = "Nome")]
+    [Required(ErrorMessage = "Por favor, informe o nome")]
+    [StringLength(30, ErrorMessage = "O nome deve possuir no máximo 30 caracteres")]
     public string Name { get; set;}
 }
 
